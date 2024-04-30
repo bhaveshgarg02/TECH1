@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+*{
+    font-size: 62.5%;
+    padding-left: 0.5rem;
+    background-color: white;
+}
+
+
+.logo{
+    float: left;
+    margin-left: 1em;
+}       
+header li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.style{
+    color: black;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: "Poppins",sans-serif;
+    border-radius: none;
+    cursor: pointer;
+    vertical-align: top;
+    opacity: 1;
+    float: right;
+    margin-right: 1.5em;
+    text-decoration: none;
+}
+
+.sweets-button{
+    color: rgb(14, 202, 223);
+}
+ .aboutus-button:hover,
+ .menu-button:hover,
+ .sweets-button:hover,
+ .gallery-button:hover,
+ .contactus-button:hover{
+    background-color: transparent;
+    color: rgb(14, 202, 223);
+    font-size: x-large;
+}
+
+.food-sweet__item .cloud1{
+    top:55%;
+    position: absolute;
+    right:-4%;
+    font-size: medium;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    z-index: 100;
+    background-color: transparent;
+
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 1px;
+}
+.nav-bar li{
+    text-decoration: none;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        width: 80%;
+        height: 90vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:white;
+    
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+
+    .logo{
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .happymenu{
+        justify-content: center;
+        margin-top: 20%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: -7%;
+    }
+    .sweet__categories{
+        margin-right: 30%;
+    }
+    .food-sweet__item{
+        width: 400px;
+        height: 300px;
+        margin-right: 20%;
+    }
+    .food-sweet__title{
+       margin-left: 20%;
+
+}
+    .sweet{
+        height: 250px;
+        width: 350px;
+    }
+
+    .cloud{
+        height: 200px;
+        width:250px;
+        margin-right: 10%;
+    }
+    .food-sweet__item .cloud1{
+        top:55%;
+        position: absolute;
+        right:-2%;
+        font-size: small;
+        font-family: "Poppins",sans-serif;
+        color: black;
+        z-index: 100;
+        background-color: transparent;
+
+    
+}
+}
+@media (min-width:1024px){
+    .aboutus-button{
+        margin-left: 25rem;
+      
+    }
+}
+
+
+.happymenu{
+    color: orange;
+font-size: xxx-large;
+font-weight: 1000;
+font-family:"Poppins", sans-serif ;
+
+margin-top: 20px;
+margin-bottom: -10px;
+justify-content: center;
+transition: opacity 0.15s;
+vertical-align:middle;
+text-align: center;
+}
+
+
+.sweet__categories{
+    max-width:1700px;
+       
+       
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 20px;
+        padding: 1rem;
+       
+}
+
+
+.food-sweet__item{
+    
+     
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    position: relative;
+    
+}
+
+.food-sweet__item img{
+    display: block;
+    border-radius: 10%;
+    position: relative;
+    margin-right: 60px;
+    margin-left: 50px;
+    justify-content: center;
+    clear: both;
+    
+    
+}
+
+.food-sweet__item a{
+    text-decoration: none;
+}
+
+
+.food-sweet__title{
+    color: rgb(14, 202, 223);
+font-size: large;
+font-weight: 1000;
+font-family:"Poppins", sans-serif ;
+
+margin-top: -5px;
+margin-left: -10px;
+transition: opacity 0.15s;
+vertical-align:middle;
+text-align: center;
+text-decoration: none;
+}
+
+.food-sweet__item .cloud{
+    position:absolute;
+    z-index: 50;    
+    background: transparent;
+    top:55%;
+    right:-20%;
+    font-size: small;
+    font-family: "Poppins",sans-serif;
+    color: rgb(14, 202, 223);
+
+
+}
+
+
+
+@media (min-width: 768px ) and (max-width:780px){
+    
+    .logo{
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+    .style{
+        display: none;
+    }
+    .happymenu{
+        justify-content: center;
+        
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
+    .sweet__categories{
+        margin-right: 30%;
+    }
+    .food-sweet__item{
+        width: 400px;
+        height: 300px;
+        margin-right: 20%;
+    }
+    .food-sweet__title{
+       margin-left: 60%;
+       margin-right: 20%;
+
+}
+.sweet{
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.food-sweet__item .cloud{
+    position: absolute;
+    margin-right: 10%;
+    top:55%;
+    right:-65%;
+    background-color: transparent;
+
+}
+.food-sweet__item .cloud1{
+    top:53%;
+    position: absolute;
+    right:-47%;
+    font-size: medium;
+    font-family: "Poppins",sans-serif;
+    color: black;
+    z-index: 100;
+    background-color: transparent;
+
+
+}  }
+ 
+
+/* 
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+/* 
+.header .menu-icon {
+  cursor: pointer;
+  display: block;
+  float:right;
+  padding: 20px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: black;
+  content: '';
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+/* 
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 280px;
+  text-align: center;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 1px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  }
+  .header .menu {
+    clear: none;
+    display: block;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .logo{
+    float: left;
+    margin-left: 8em;
+  }
+  .header .menu-btn{
+    max-height: 350px;
+  }
+  
+}  */
