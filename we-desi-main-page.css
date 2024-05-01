@@ -840,6 +840,7 @@ bottom: -1%;
 width: 100%;
   color: black;
 text-align: left;
+text-style:none;
 background-color: transparent;
 z-index: 1000;
 }
