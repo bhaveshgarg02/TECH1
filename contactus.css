@@ -584,7 +584,7 @@ html,body{
     flex-direction: column;
   }
   .form input{
-    width:85vw;
+    width:95vw;
   }
   .submit{
     margin-left: 300px;
