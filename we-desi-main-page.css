@@ -1015,7 +1015,7 @@ bottom: 0%;
     transition: all 0.2s ease-in-out;
 }
 .logo{
-  margin-left: -12px;
+  margin-left: -5px;
   margin-bottom: 10px;
 }
 html,body{
@@ -1054,6 +1054,7 @@ body {
       position: absolute;
       top:2%;
       font-weight: 400;
+        left:17%;
       line-height: 4vw;
     }
     
