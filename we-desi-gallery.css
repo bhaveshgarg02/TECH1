@@ -135,7 +135,7 @@ header li{
     #check:checked ~ .menu {right: 0;}
 
     .logo{
-        margin-left: 2px;
+        margin-left: -12px;
         margin-bottom: 10px;
     }
     .footer span{
