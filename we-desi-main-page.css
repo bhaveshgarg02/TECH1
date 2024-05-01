@@ -16,6 +16,7 @@
   margin: 0 5px;
   position:fixed;
   right:0%;
+  top:0%;
 }
 
 .switch > span {
@@ -24,7 +25,7 @@
   pointer-events: none;
   font-family: 'Helvetica', Arial, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
   width: 50%;
@@ -69,8 +70,8 @@ input.check-toggle-round-flat:checked ~ .on {
 
 input.check-toggle-round-flat + label {
   padding: 2px;
-  width: 97px;
-  height: 35px;
+  width: 80px;
+  height: 25px;
   background-color: #F36F25;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
