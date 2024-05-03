@@ -1458,3 +1458,9 @@ background: transparent;
   margin-right: 40px;
 }
 }
+@media (min-width:1350px) {
+  body,html{
+    overflow-x: hidden;
+  }
+ 
+}
