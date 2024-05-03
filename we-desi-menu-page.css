@@ -555,14 +555,16 @@ i {
        }
        .food-menu__title{
          align-items: center;
-         margin-left: -70%;
+         margin-left: -50%;
        }
-       .food-menu__item img{
-         height: 60vw;
-         width: 80vw;
-        margin-left: -28vw;
-        
-       }
+         .food-menu__item img {
+        height: 60vw;
+        width: 75vw;
+        align-items: center;
+        margin-left: -29%;
+        margin-right: 10%;
+    }
+
         .overlay {
   position: absolute;
   top:55%;
